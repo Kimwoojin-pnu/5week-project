@@ -17,7 +17,7 @@ class Settings:
     polar_product_id: str = os.getenv("POLAR_PRODUCT_ID", "")
     polar_webhook_secret: str = os.getenv("POLAR_WEBHOOK_SECRET", "")
 
-    database_url: str = os.getenv("DATABASE_URL", "sqlite:///./app.db")
+    database_url: str = os.getenv("DATABASE_URL", "sqlite:////tmp/app.db")
     frontend_url: str = os.getenv("FRONTEND_URL", "http://localhost:5173")
 
 
